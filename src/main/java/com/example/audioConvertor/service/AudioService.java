@@ -14,6 +14,7 @@ public class AudioService {
 
     public byte[] convertTextToSpeech(String text) {
         try {
+
             HttpClient client = HttpClient.newHttpClient();
             String json = """
                 {
